@@ -1,0 +1,11 @@
+CREATE DATABASE WEATHER_DB;
+USE DATABASE WEATHER_DB;
+USE SCHEMA PUBLIC;
+
+CREATE TABLE weather (
+    city STRING,
+    temperature FLOAT,
+    humidity INTEGER,
+    weather STRING,
+    load_timestamp TIMESTAMP_NTZ DEFAULT CURRENT_TIMESTAMP
+);
